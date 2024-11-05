@@ -1,0 +1,201 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #003366; /* Vibrant navy blue */
+    padding: 15px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.2s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00; /* Bright gold accent */
+    transform: scale(1.1);
+}
+
+/* Sections Styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+#home {
+    background: #e0efff;
+}
+
+#services, #calculator, #contact {
+    background-color: #f0f4fa;
+    padding-top: 70px;
+}
+
+/* Headings */
+h1, h2 {
+    color: #003366; /* Vibrant navy blue */
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+/* Budget Calculator Styling */
+#calculator form {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#calculator label {
+    font-weight: 600;
+    color: #333;
+}
+
+#budgetResult {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 20px;
+    color: #003366; /* Vibrant navy blue */
+    text-align: center;
+}
+
+/* Input and Button Styling */
+input, select, textarea, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #003366; /* Navy blue on focus */
+    outline: none;
+}
+
+button {
+    background-color: #003366; /* Vibrant navy blue */
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    border: none;
+}
+
+button:hover {
+    background-color: #ffcc00; /* Bright gold accent */
+    color: #003366; /* Navy blue */
+    transform: scale(1.05);
+}
+
+/* Checkbox Styling */
+#calculator input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Contact Form Styling */
+#contactForm {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm label {
+    font-weight: 600;
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Budget Result Styling */
+#budgetResult {
+    font-size: 1.2em;
+    color: #003366; /* Vibrant navy blue */
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    header nav ul li {
+        margin: 10px 0;
+    }
+    
+    section {
+        padding: 40px 20px;
+    }
+    
+    h1 {
+        font-size: 2.2em;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+}
